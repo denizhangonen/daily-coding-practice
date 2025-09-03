@@ -1,4 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image';
+
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
+            Get started by editing{' '}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               app/page.tsx
             </code>
@@ -49,6 +51,7 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <Button>I'm the Button</Button>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
@@ -101,3 +104,4 @@ export default function Home() {
     </div>
   );
 }
+
